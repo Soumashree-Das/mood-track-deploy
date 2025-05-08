@@ -8,7 +8,7 @@ import JournalRouters from "./src/routes/journalEntry.routes.js";
 const app = express();
 
 app.use(cors({
-    origin:'https://mood-tracker-frontend-topaz.vercel.app/',
+    origin:'http://localhost:5173/',
     credentials:true
 }))
 
