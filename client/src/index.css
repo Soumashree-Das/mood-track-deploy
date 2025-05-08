@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+:root {
+    --color-mint: #ecf8f8;
+    --color-biscuit-brown: #eee4e1;
+    --color-biscuit: #e7d8c9;
+    --color-nude-peach-brown: #e6beae;
+    --color-matte-brown: #b2967d; 
+}

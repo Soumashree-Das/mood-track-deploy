@@ -1,0 +1,20 @@
+/* For the calendar dot styling */
+.react-calendar__tile--hasActive {
+    position: relative;
+  }
+  
+  .journal-dot {
+    height: 6px;
+    width: 6px;
+    background-color: #ff66b3;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: 3px;
+    left: calc(50% - 3px);
+  }
+  
+  /* Font family */
+  .font-borel {
+    font-family: 'Borel', cursive;
+  }
