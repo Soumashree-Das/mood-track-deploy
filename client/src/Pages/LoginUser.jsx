@@ -20,7 +20,7 @@ function LoginUser() {
     setError('');
     
     try {
-      const response = await axios.post('http://localhost:8080/user/login', formData);
+      const response = await axios.post('https://mood-tracker-d4x1.onrender.com/user/login', formData);
       
       // Use the login function from AuthContext
       login(response.data.token, response.data.user);

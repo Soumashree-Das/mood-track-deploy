@@ -61,7 +61,7 @@ const AccountPage = () => {
         }
   
         // Fetch user profile data
-        const userResponse = await fetch('http://localhost:8080/user/profile', {
+        const userResponse = await fetch('https://mood-tracker-d4x1.onrender.com/user/profile', {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -75,7 +75,7 @@ const AccountPage = () => {
         setUser(userData);
         
         // Fetch mood data based on time range
-        const moodDataResponse = await fetch(`http://localhost:8080/journal/mood-data?range=${timeRange}`, {
+        const moodDataResponse = await fetch(`https://mood-tracker-d4x1.onrender.com/journal/mood-data?range=${timeRange}`, {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -93,7 +93,7 @@ const AccountPage = () => {
           setHasEnoughData(true);
           
           // Fetch mood frequency data
-          const moodFrequencyResponse = await fetch(`http://localhost:8080/journal/mood-frequency?range=${timeRange}`, {
+          const moodFrequencyResponse = await fetch(`https://mood-tracker-d4x1.onrender.com/journal/mood-frequency?range=${timeRange}`, {
             headers: {
               'Authorization': `Bearer ${token}`
             }

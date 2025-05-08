@@ -15,7 +15,7 @@ function RegisterUser() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Submitting form data:", formData);
-    axios.post('http://localhost:8080/user/register', formData)
+    axios.post('https://mood-tracker-d4x1.onrender.com/user/register', formData)
       .then(result => {
         alert("Registratin successful!🥳 please login to continue!");
         console.log("Registration successful:", result.data);
